@@ -86,6 +86,8 @@ void level_print(const binary_tree_t *tree, void(*func)(int), int lvl);
 /**********HELPER FUNCTIONS*********/
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 int check_is_complete(const binary_tree_t *root, int index, int size);
-
+bst_t *inorder_successor(bst_t *root);
+bst_t *bst_delete(bst_t *root, bst_t *node);
+bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
 
 #endif /*BINARY_TREES*/
