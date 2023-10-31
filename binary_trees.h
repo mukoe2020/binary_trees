@@ -85,6 +85,7 @@ void level_print(const binary_tree_t *tree, void(*func)(int), int lvl);
 
 /**********HELPER FUNCTIONS*********/
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
-int complete_helper(const binary_tree_t *tree, size_t size, size_t idx);
+int check_is_complete(const binary_tree_t *root, int index, int size);
+
 
 #endif /*BINARY_TREES*/
