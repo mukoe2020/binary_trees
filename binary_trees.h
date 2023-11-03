@@ -92,5 +92,8 @@ bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
 int is_avl_helper(const binary_tree_t *tree, int lo, int hi);
 size_t height(const binary_tree_t *tree);
 void create_tree(avl_t **node, int *array, size_t size, int mode);
+avl_t *avl_insert(avl_t **tree, int value);
+avl_t *balance_avl_tree(avl_t *tree);
+avl_t *_avl_insert(avl_t **tree, int value);
 
 #endif /*BINARY_TREES*/
